@@ -59,6 +59,12 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
     return '';
   }
 
+  const initialData: InitialData = {
+    maxRuleLen: 0,
+    maxPathLen: 0,
+    messages: [],
+  };
+
   const {
     maxRuleLen,
     maxPathLen,
@@ -81,10 +87,10 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
         path: { filePath: path, len: pathLen },
       }],
     };
-  }, { maxRuleLen: 0, maxPathLen: 0, messages: [] } as InitialData);
+  }, initialData);
 
   return [
-    chalk.white(result.filePath), ...messages.map(message => buildMessage(message, maxPathLen, maxRuleLen))
+    chalk.white(result.filePath), ...messages.map(message => buildMessage(message, maxPathLen, maxRuleLen)),
   ].join(SEPARATOR);
 }
 
