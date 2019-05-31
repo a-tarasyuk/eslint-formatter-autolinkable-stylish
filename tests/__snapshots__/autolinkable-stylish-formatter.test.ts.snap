@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`autolinkable-stylish-formatter matches its snapshot 1`] = `
+"[37m/fixtures/a.ts[39m
+[31mERROR[39m: /fixtures/a.ts:1:11   [90m@typescript-eslint/interface-name-prefix[39m [33mInterface name must not be prefixed with \\"I\\".[39m
+[31mERROR[39m: /fixtures/a.ts:1:11   [90m@typescript-eslint/no-empty-interface[39m    [33mAn empty interface is equivalent to \`{}\`.[39m
+[31mERROR[39m: /fixtures/a.ts:5:8    [90mno-empty[39m                                 [33mEmpty block statement.[39m
+[31mERROR[39m: /fixtures/a.ts:8:6    [90mno-empty[39m                                 [33mEmpty block statement.[39m
+[34mWARNING[39m: /fixtures/a.ts:12:5 [90m@typescript-eslint/no-unused-vars[39m        [33m'x' is assigned a value but never used.[39m
+"
+`;

@@ -1,0 +1,74 @@
+[
+  {
+    "filePath": "/fixtures/a.ts",
+    "messages": [
+      {
+        "ruleId": "@typescript-eslint/interface-name-prefix",
+        "severity": 2,
+        "message": "Interface name must not be prefixed with \"I\".",
+        "line": 1,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "noPrefix",
+        "endLine": 1,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "@typescript-eslint/no-empty-interface",
+        "severity": 2,
+        "message": "An empty interface is equivalent to `{}`.",
+        "line": 1,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "noEmpty",
+        "endLine": 1,
+        "endColumn": 18
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 5,
+        "column": 8,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 7,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "no-empty",
+        "severity": 2,
+        "message": "Empty block statement.",
+        "line": 8,
+        "column": 6,
+        "nodeType": "BlockStatement",
+        "messageId": "unexpected",
+        "endLine": 10,
+        "endColumn": 2
+      },
+      {
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 1,
+        "message": "'x' is assigned a value but never used.",
+        "line": 12,
+        "column": 5,
+        "nodeType": "Identifier",
+        "endLine": 12,
+        "endColumn": 6
+      }
+    ],
+    "errorCount": 4,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "interface IParams {}\n\nconst a = 1\n\nif (a) {\n\n}\nelse {\n\n}\n\nlet x = 1;\nx = 100;\n\nexport class A {\n}"
+  },
+  {
+    "filePath": "/fixtures/b.ts",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  }
+]
