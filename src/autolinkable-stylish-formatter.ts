@@ -55,10 +55,6 @@ const buildMessage = ({ errorType, message, rule, path }: Message, maxPathLen: n
 );
 
 const buildOutput = (result: CLIEngine.LintResult): string => {
-  if (!result.errorCount && !result.warningCount) {
-    return '';
-  }
-
   const initialData: InitialData = {
     maxRuleLen: 0,
     maxPathLen: 0,
@@ -94,4 +90,8 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
   ].join(SEPARATOR);
 }
 
-export = (results: CLIEngine.LintResult[]) => results.map(buildOutput).join(SEPARATOR);
+export = (results: CLIEngine.LintResult[]) => (
+  results
+    .filter(result => result.errorCount || result.warningCount)
+    .map(buildOutput).join(SEPARATOR)
+);
