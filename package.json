@@ -1,6 +1,6 @@
 {
   "name": "eslint-formatter-autolinkable-stylish",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "ESlint Autolinkable Stylish Formatter",
   "keywords": [
     "eslint",
