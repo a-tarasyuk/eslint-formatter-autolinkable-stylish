@@ -37,9 +37,9 @@ const pad = (str: string, minLen: number, maxLen: number) => (
     : `${ str }${ ' '.repeat(maxLen - minLen) }`
 );
 
-const buildPath = (filePath: string, column: number, line: number) => {
+const buildPath = (filePath: string, line: number, column: number) => {
   const path = !filePath.includes('/') && !filePath.includes('\\') ? `.${ sep }${ filePath }` : filePath;
-  return `${ path }:${ line }:${ column }`;
+  return `${ path }:${ line }${ column ? `:${ column }`: '' }`;
 }
 
 const getErrorType = (severity: number, isRaw = true) => {
@@ -67,7 +67,7 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
     messages,
   } = result.messages.reduce(({ maxRuleLen, maxPathLen, messages }, { severity, message, ruleId, column, line }) => {
     const errorType = getErrorType(severity);
-    const path = buildPath(result.filePath, column, line);
+    const path = buildPath(result.filePath, line, column);
 
     const ruleName = ruleId ? ruleId : '';
     const ruleLen = ruleName.length;
