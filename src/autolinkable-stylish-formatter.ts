@@ -38,8 +38,15 @@ const pad = (str: string, minLen: number, maxLen: number) => (
 );
 
 const buildPath = (filePath: string, line: number, column: number) => {
-  const path = !filePath.includes('/') && !filePath.includes('\\') ? `.${ sep }${ filePath }` : filePath;
-  return `${ path }:${ line }${ column ? `:${ column }`: '' }`;
+  const path = !filePath.includes('/') && !filePath.includes('\\')
+    ?`.${ sep }${ filePath }`
+    : filePath;
+
+  return [
+    path,
+    line ? `:${ line }`: '',
+    column ? `:${ column }`: '',
+  ].join('');
 }
 
 const getErrorType = (severity: number, isRaw = true) => {

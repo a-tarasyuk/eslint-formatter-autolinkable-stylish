@@ -1,0 +1,50 @@
+[
+  {
+    "filePath": "/fixtures/a.ts",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: If \"parserOptions.project\" has been set for @typescript-eslint/parser, /fixtures/a.ts must be included in at least one of the projects provided."
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "interface IParams {}\n\nconst a = 1\n\nif (a) {\n\n}\nelse {\n\n}\n\nlet x = 1;\nx = 100;\n\nexport class A {\n}"
+  },
+  {
+    "filePath": "/fixtures/b.ts",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: If \"parserOptions.project\" has been set for @typescript-eslint/parser, /fixtures/b.ts must be included in at least one of the projects provided."
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "interface IParams {}\n\nconst a = 1\n\nif (a) {\n\n}\nelse {\n\n}\n\nlet x = 1;\nx = 100;\n\nexport class A {\n}"
+  },
+  {
+    "filePath": "/fixtures/c.ts",
+    "messages": [
+      {
+        "ruleId": null,
+        "fatal": true,
+        "severity": 2,
+        "message": "Parsing error: If \"parserOptions.project\" has been set for @typescript-eslint/parser, /fixtures/c.ts must be included in at least one of the projects provided."
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "interface IParams {}\n\nconst a = 1\n\nif (a) {\n\n}\nelse {\n\n}\n\nlet x = 1;\nx = 100;\n\nexport class A {\n}"
+  }
+]
