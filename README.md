@@ -15,6 +15,10 @@ $ npm i eslint-formatter-autolinkable-stylish --save-dev
 $ eslint --format=autolinkable-stylish file.js
 ```
 
+## Example
+
+![Image of eslint-formatter-autolinkable-stylish output](https://user-images.githubusercontent.com/509265/63245125-f2a79600-c267-11e9-8dff-383dadc43ec9.png)
+
 ## License and Copyright
 
 This software is released under the terms of the [MIT license](https://github.com/a-tarasyuk/eslint-formatter-autolinkable-stylish/blob/master/LICENSE.md).
