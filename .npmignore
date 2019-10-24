@@ -1,6 +1,11 @@
 src
 tests
+.editorconfig
 .eslintrc
+.prettierignore
+.prettierrc.json
 jest.config.js
 tsconfig.json
 .travis.yml
+tsconfig.eslint.json
+tsconfig.json
