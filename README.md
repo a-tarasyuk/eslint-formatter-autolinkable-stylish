@@ -1,6 +1,6 @@
 # eslint-formatter-autolinkable-stylish
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/a-tarasyuk/eslint-formatter-autolinkable-stylish/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/eslint-formatter-autolinkable-stylish.svg?style=flat-square)](https://www.npmjs.com/package/eslint-formatter-autolinkable-stylish) ![Travis (.com) master](https://img.shields.io/travis/com/a-tarasyuk/eslint-formatter-autolinkable-stylish/master.svg?style=flat-square) [![npm downloads](https://img.shields.io/npm/dm/eslint-formatter-autolinkable-stylish.svg?style=flat-square)](https://www.npmjs.com/package/eslint-formatter-autolinkable-stylish)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/a-tarasyuk/eslint-formatter-autolinkable-stylish/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/eslint-formatter-autolinkable-stylish.svg?style=flat-square)](https://www.npmjs.com/package/eslint-formatter-autolinkable-stylish) [![Travis (.com) master](https://img.shields.io/travis/com/a-tarasyuk/eslint-formatter-autolinkable-stylish?style=flat-square)](https://travis-ci.com/a-tarasyuk/eslint-formatter-autolinkable-stylish) [![npm downloads](https://img.shields.io/npm/dm/eslint-formatter-autolinkable-stylish.svg?style=flat-square)](https://www.npmjs.com/package/eslint-formatter-autolinkable-stylish)
 
 > Autolinkable Stylish formatter for ESLint
 
