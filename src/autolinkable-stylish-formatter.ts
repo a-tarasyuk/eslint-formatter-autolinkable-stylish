@@ -135,5 +135,5 @@ export = (results: CLIEngine.LintResult[]) => {
     meta.push(chalk.red(`${errorCount} ${plur('error', errorCount)}`));
   }
 
-  return `${ output.join(SEPARATOR) }${ meta.join(SEPARATOR) }`;
+  return `${output.join(SEPARATOR)}${meta.join(SEPARATOR)}`;
 };
