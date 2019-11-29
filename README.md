@@ -18,7 +18,7 @@ $ eslint --format=autolinkable-stylish file.js
 
 ## Example
 
-![Image of eslint-formatter-autolinkable-stylish output](https://user-images.githubusercontent.com/509265/63245125-f2a79600-c267-11e9-8dff-383dadc43ec9.png)
+![Image of eslint-formatter-autolinkable-stylish output](https://user-images.githubusercontent.com/509265/69859851-abd12f80-129d-11ea-9722-d1df6c4cbc45.png)
 
 ## License and Copyright
 

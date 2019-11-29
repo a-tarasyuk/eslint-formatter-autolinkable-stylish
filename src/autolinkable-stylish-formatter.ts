@@ -1,4 +1,5 @@
 import chalk from 'chalk';
+import plur from 'plur';
 import { CLIEngine } from 'eslint';
 import { sep } from 'path';
 
@@ -26,8 +27,8 @@ interface InitialData {
 }
 
 const SEPARATOR = '\n';
-const WARNING = 'WARNING';
-const ERROR = 'ERROR';
+const WARNING = 'Warning';
+const ERROR = 'Error';
 
 const isError = (severity: number) => severity === 2;
 
@@ -103,8 +104,36 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
   ].join(SEPARATOR);
 };
 
-export = (results: CLIEngine.LintResult[]) =>
-  results
-    .filter(result => result.errorCount || result.warningCount)
-    .map(buildOutput)
-    .join(SEPARATOR);
+export = (results: CLIEngine.LintResult[]) => {
+  const resultsLen = results.length;
+  const output: string[] = [];
+  const meta: string[] = [];
+
+  let warningCount = 0;
+  let errorCount = 0;
+
+  for (let i = 0; i < resultsLen; i++) {
+    const result = results[i];
+
+    if (result.warningCount || result.errorCount) {
+      warningCount = warningCount + result.warningCount;
+      errorCount = errorCount + result.errorCount;
+
+      output.push(buildOutput(result));
+    }
+  }
+
+  if (warningCount || errorCount) {
+    meta.push(SEPARATOR);
+  }
+
+  if (warningCount) {
+    meta.push(chalk.blue(`${warningCount} ${plur('warning', warningCount)}`));
+  }
+
+  if (errorCount) {
+    meta.push(chalk.red(`${errorCount} ${plur('error', errorCount)}`));
+  }
+
+  return `${ output.join(SEPARATOR) }${ meta.join(SEPARATOR) }`;
+};
