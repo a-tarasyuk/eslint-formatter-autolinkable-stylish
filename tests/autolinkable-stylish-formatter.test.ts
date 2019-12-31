@@ -9,7 +9,7 @@ describe('autolinkable-stylish-formatter', () => {
 
   it('matches its snapshot with parsing errors', () => {
     expect(
-      autolinkableStylishFormatter(parsingErrorsReport as any),
+      autolinkableStylishFormatter(parsingErrorsReport as any), // eslint-disable-line @typescript-eslint/no-explicit-any
     ).toMatchSnapshot();
   });
 });

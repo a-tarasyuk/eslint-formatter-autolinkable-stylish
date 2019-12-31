@@ -30,12 +30,12 @@ const SEPARATOR = '\n';
 const WARNING = 'Warning';
 const ERROR = 'Error';
 
-const isError = (severity: number) => severity === 2;
+const isError = (severity: number): boolean => severity === 2;
 
-const pad = (str: string, minLen: number, maxLen: number) =>
+const pad = (str: string, minLen: number, maxLen: number): string =>
   maxLen <= minLen ? str : `${str}${' '.repeat(maxLen - minLen)}`;
 
-const buildPath = (filePath: string, line: number, column: number) => {
+const buildPath = (filePath: string, line: number, column: number): string => {
   const path =
     !filePath.includes('/') && !filePath.includes('\\')
       ? `.${sep}${filePath}`
@@ -44,7 +44,7 @@ const buildPath = (filePath: string, line: number, column: number) => {
   return [path, line ? `:${line}` : '', column ? `:${column}` : ''].join('');
 };
 
-const getErrorType = (severity: number, isRaw = true) => {
+const getErrorType = (severity: number, isRaw = true): string => {
   if (isRaw) {
     return `${isError(severity) ? ERROR : WARNING}: `;
   }
@@ -55,7 +55,7 @@ const buildMessage = (
   { errorType, message, rule, path }: Message,
   maxPathLen: number,
   maxRuleLen: number,
-) =>
+): string =>
   `${errorType}${pad(path.filePath, path.len, maxPathLen)} ${pad(
     rule.name,
     rule.len,
@@ -104,7 +104,7 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
   ].join(SEPARATOR);
 };
 
-export = (results: CLIEngine.LintResult[]) => {
+export = (results: CLIEngine.LintResult[]): string => {
   const resultsLen = results.length;
   const output: string[] = [];
   const meta: string[] = [];
