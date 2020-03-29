@@ -100,7 +100,7 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
 
   return [
     chalk.white(result.filePath),
-    ...messages.map(message => buildMessage(message, maxPathLen, maxRuleLen)),
+    ...messages.map((message) => buildMessage(message, maxPathLen, maxRuleLen)),
   ].join(SEPARATOR);
 };
 
