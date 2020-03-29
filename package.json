@@ -1,6 +1,6 @@
 {
   "name": "eslint-formatter-autolinkable-stylish",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "ESlint Autolinkable Stylish Formatter",
   "keywords": [
     "eslint",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "chalk": "^3.0.0",
-    "plur": "^4.0.0"
+    "plur": "^3.1.1"
   },
   "peerDependencies": {
     "eslint": "^6.8.0"
