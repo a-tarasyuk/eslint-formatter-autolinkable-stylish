@@ -29,24 +29,24 @@
     "build": "tsc"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
-    "plur": "^3.1.1"
+    "chalk": "^4.1.0",
+    "plur": "^4.0.0"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.6.0"
   },
   "devDependencies": {
-    "@types/eslint": "6.1.8",
-    "@types/jest": "25.1.4",
-    "@types/node": "13.9.5",
-    "@typescript-eslint/eslint-plugin": "2.25.0",
-    "@typescript-eslint/parser": "2.25.0",
-    "eslint": "5.16.0",
-    "husky": "4.2.3",
-    "jest": "25.2.3",
-    "prettier": "2.0.2",
-    "ts-jest": "25.2.1",
-    "typescript": "3.8.3"
+    "@types/eslint": "7.2.0",
+    "@types/jest": "26.0.9",
+    "@types/node": "14.0.27",
+    "@typescript-eslint/eslint-plugin": "3.8.0",
+    "@typescript-eslint/parser": "3.8.0",
+    "eslint": "7.6.0",
+    "husky": "4.2.5",
+    "jest": "26.2.2",
+    "prettier": "2.0.5",
+    "ts-jest": "26.1.4",
+    "typescript": "3.9.7"
   },
   "engines": {
     "node": ">=0.10.0"
