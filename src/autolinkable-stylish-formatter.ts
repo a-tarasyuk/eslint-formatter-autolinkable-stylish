@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import plur from 'plur';
-import { CLIEngine } from 'eslint';
+import { ESLint } from 'eslint';
 import { sep } from 'path';
 
 interface Rule {
@@ -62,7 +62,7 @@ const buildMessage = (
     maxRuleLen,
   )} ${message}`;
 
-const buildOutput = (result: CLIEngine.LintResult): string => {
+const buildOutput = (result: ESLint.LintResult): string => {
   const initialData: InitialData = {
     maxRuleLen: 0,
     maxPathLen: 0,
@@ -104,7 +104,7 @@ const buildOutput = (result: CLIEngine.LintResult): string => {
   ].join(SEPARATOR);
 };
 
-export = (results: CLIEngine.LintResult[]): string => {
+export = (results: ESLint.LintResult[]): string => {
   const resultsLen = results.length;
   const output: string[] = [];
   const meta: string[] = [];

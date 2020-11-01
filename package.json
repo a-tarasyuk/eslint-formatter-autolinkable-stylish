@@ -25,7 +25,7 @@
     "format": "prettier --write \"./**/*.{ts,md}\"",
     "format:check": "prettier --list-different \"./**/*.{ts,md}\"",
     "test": "jest",
-    "lint": "eslint -c .eslintrc . --ext .ts",
+    "lint": "eslint -c .eslintrc --ext .ts src tests",
     "build": "tsc"
   },
   "dependencies": {
