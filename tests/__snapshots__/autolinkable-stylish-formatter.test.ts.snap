@@ -2,7 +2,7 @@
 
 exports[`autolinkable-stylish-formatter matches its snapshot 1`] = `
 "[37m/fixtures/a.ts[39m
-[31mError[39m: /fixtures/a.ts:1:11   [90m@typescript-eslint/interface-name-prefix[39m [33mInterface name must not be prefixed with \\"I\\".[39m
+[31mError[39m: /fixtures/a.ts:1:11   [90m@typescript-eslint/interface-name-prefix[39m [33mInterface name must not be prefixed with "I".[39m
 [31mError[39m: /fixtures/a.ts:1:11   [90m@typescript-eslint/no-empty-interface[39m    [33mAn empty interface is equivalent to \`{}\`.[39m
 [31mError[39m: /fixtures/a.ts:5:8    [90mno-empty[39m                                 [33mEmpty block statement.[39m
 [31mError[39m: /fixtures/a.ts:8:6    [90mno-empty[39m                                 [33mEmpty block statement.[39m
@@ -14,11 +14,11 @@ exports[`autolinkable-stylish-formatter matches its snapshot 1`] = `
 
 exports[`autolinkable-stylish-formatter matches its snapshot with parsing errors 1`] = `
 "[37m/fixtures/a.ts[39m
-[31mError[39m: /fixtures/a.ts  [33mParsing error: If \\"parserOptions.project\\" has been set for @typescript-eslint/parser, /fixtures/a.ts must be included in at least one of the projects provided.[39m
+[31mError[39m: /fixtures/a.ts  [33mParsing error: If "parserOptions.project" has been set for @typescript-eslint/parser, /fixtures/a.ts must be included in at least one of the projects provided.[39m
 [37m/fixtures/b.ts[39m
-[31mError[39m: /fixtures/b.ts  [33mParsing error: If \\"parserOptions.project\\" has been set for @typescript-eslint/parser, /fixtures/b.ts must be included in at least one of the projects provided.[39m
+[31mError[39m: /fixtures/b.ts  [33mParsing error: If "parserOptions.project" has been set for @typescript-eslint/parser, /fixtures/b.ts must be included in at least one of the projects provided.[39m
 [37m/fixtures/c.ts[39m
-[31mError[39m: /fixtures/c.ts  [33mParsing error: If \\"parserOptions.project\\" has been set for @typescript-eslint/parser, /fixtures/c.ts must be included in at least one of the projects provided.[39m
+[31mError[39m: /fixtures/c.ts  [33mParsing error: If "parserOptions.project" has been set for @typescript-eslint/parser, /fixtures/c.ts must be included in at least one of the projects provided.[39m
 
 [31m3 errors[39m"
 `;

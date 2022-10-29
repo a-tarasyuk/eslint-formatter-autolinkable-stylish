@@ -45,10 +45,7 @@ const buildPath = (filePath: string, line: number, column: number): string => {
 };
 
 const getErrorType = (severity: number, isRaw = true): string => {
-  if (isRaw) {
-    return `${isError(severity) ? ERROR : WARNING}: `;
-  }
-  return `${isError(severity) ? chalk.red(ERROR) : chalk.blue(WARNING)}: `;
+  return isRaw ? `${isError(severity) ? ERROR : WARNING}: `: `${isError(severity) ? chalk.red(ERROR) : chalk.blue(WARNING)}: `;
 };
 
 const buildMessage = (
