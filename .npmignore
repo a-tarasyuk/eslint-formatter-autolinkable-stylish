@@ -3,7 +3,7 @@ coverage
 src
 tests
 .editorconfig
-.eslintrc
+eslint.config.mjs
 .prettierignore
 .prettierrc.json
 jest.config.js
